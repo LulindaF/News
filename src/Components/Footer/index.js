@@ -10,7 +10,7 @@ function Copyright() {
 			{'Copyright © '}
 			<Link color="inherit" href="/">
 				OpenHouse News
-            </Link>{' '}
+      </Link>{' '}
 			{new Date().getFullYear()}
 			{'.'}
 		</Typography>
@@ -25,13 +25,12 @@ const useStyles = makeStyles(theme => ({
 }));
 
 
-export default function Album() {
+export default function Footer() {
 	const classes = useStyles();
 
 	return (
 		<React.Fragment>
 			<CssBaseline />
-			{/* Footer */}
 			<footer className={classes.footer}>
 				<Typography variant="h6" align="center" gutterBottom>
 					OpenHouse News
@@ -41,7 +40,6 @@ export default function Album() {
         </Typography>
 				<Copyright />
 			</footer>
-			{/* End footer */}
 		</React.Fragment>
 	);
 }
