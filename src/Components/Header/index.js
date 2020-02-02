@@ -11,6 +11,8 @@ import Button from '@material-ui/core/Button';
 import ButtonGroup from '@material-ui/core/ButtonGroup';
 import KeyboardArrowUpIcon from '@material-ui/icons/KeyboardArrowUp';
 import Zoom from '@material-ui/core/Zoom';
+import Link from '@material-ui/core/Link';
+
 
 const useStyles = makeStyles(theme => ({
 	root: {
@@ -24,7 +26,7 @@ const useStyles = makeStyles(theme => ({
 	button: {
 		textTransform: "none",
 		fontSize: '1rem'
-  }
+	}
 }));
 
 function ScrollTop(props) {
@@ -73,9 +75,15 @@ export default function Header(props) {
 				<Toolbar>
 					<Typography variant="h6" className={classes.title}>OpenHouse News</Typography>
 					<ButtonGroup aria-label="text primary button group" color="inherit" variant="text">
-						<Button className={classes.button}>Headlines</Button>
-						<Button className={classes.button}>Everything</Button>
-						<Button className={classes.button}>Sources</Button>
+						<Link href="/">
+							<Button className={classes.button}>Headlines</Button>
+						</Link>
+						<Link href="/everything">
+							<Button className={classes.button}>Everything</Button>
+						</Link>
+						<Link href="/source">
+							<Button className={classes.button}>Source</Button>
+						</Link>
 					</ButtonGroup>
 				</Toolbar>
 			</AppBar>

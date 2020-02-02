@@ -28,7 +28,6 @@ const useStyles = makeStyles(theme => ({
 		padding: theme.spacing(5),
 	},
 	menu: {
-		
 	},
 	info: {
 		flexGrow: 1

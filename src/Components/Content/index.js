@@ -9,6 +9,7 @@ import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
+import Link from '@material-ui/core/Link';
 
 
 const useStyles = makeStyles(theme => ({
@@ -63,9 +64,11 @@ export default function Content() {
                     </Typography>
 									</CardContent>
 									<CardActions>
-										<Button className={classes.button} size="small" variant="outlined" color="primary">
-											Read More
+										<Link color="inherit" href="/article">
+											<Button className={classes.button} size="small" variant="outlined" color="primary">
+												Read More
                     </Button>
+										</Link>
 									</CardActions>
 								</Card>
 							</Grid>
