@@ -8,6 +8,9 @@ import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
 import Footer from '../../Components/Footer';
 import Header from '../../Components/Header';
+import Link from '@material-ui/core/Link';
+import Breadcrumbs from '@material-ui/core/Breadcrumbs';
+import NavigateNextIcon from '@material-ui/icons/NavigateNext';
 
 
 const useStyles = makeStyles(theme => ({
@@ -31,7 +34,11 @@ const useStyles = makeStyles(theme => ({
   },
   typography: {
     textAlign: 'justify'
-  }
+  },
+  breadcrumb: {
+		backgroundColor: 'gainsboro',
+		paddingLeft: theme.spacing(4),
+	}
 }));
 
 const cards = [1];
@@ -43,6 +50,19 @@ export default function Article() {
     <React.Fragment>
       <CssBaseline />
       <Header />
+      <Breadcrumbs className={classes.breadcrumb} separator={<NavigateNextIcon fontSize="small" />} aria-label="breadcrumb">
+        <Link color="inherit" href="/">
+          Home
+        </Link>
+        <Link color="inherit" href="/everything">
+          Headlines
+        </Link>
+        <Typography
+          color="textPrimary"
+          aria-current="page">
+          Article
+        </Typography>
+      </Breadcrumbs>
       <main>
         <Container className={classes.cardGrid} maxWidth="md">
           <Grid container spacing={1}>
@@ -62,59 +82,59 @@ export default function Article() {
                 Heading
               </Typography>
               <Typography className={classes.typography}>
-              <p>
-                This is a media card. You can use this section to describe the content.
-                This is a media card. You can use this section to describe the content.
-                This is a media card. You can use this section to describe the content.
-                This is a media card. You can use this section to describe the content.
-                This is a media card. You can use this section to describe the content.
-                This is a media card. You can use this section to describe the content.
-                This is a media card. You can use this section to describe the content.
-                This is a media card. You can use this section to describe the content.
-                This is a media card. You can use this section to describe the content.
-                This is a media card. You can use this section to describe the content.
-                This is a media card. You can use this section to describe the content.
-                This is a media card. You can use this section to describe the content.
-                This is a media card. You can use this section to describe the content.
-                This is a media card. You can use this section to describe the content.
-                This is a media card. You can use this section to describe the content.
-                This is a media card. You can use this section to describe the content.
+                <p>
+                  This is a media card. You can use this section to describe the content.
+                  This is a media card. You can use this section to describe the content.
+                  This is a media card. You can use this section to describe the content.
+                  This is a media card. You can use this section to describe the content.
+                  This is a media card. You can use this section to describe the content.
+                  This is a media card. You can use this section to describe the content.
+                  This is a media card. You can use this section to describe the content.
+                  This is a media card. You can use this section to describe the content.
+                  This is a media card. You can use this section to describe the content.
+                  This is a media card. You can use this section to describe the content.
+                  This is a media card. You can use this section to describe the content.
+                  This is a media card. You can use this section to describe the content.
+                  This is a media card. You can use this section to describe the content.
+                  This is a media card. You can use this section to describe the content.
+                  This is a media card. You can use this section to describe the content.
+                  This is a media card. You can use this section to describe the content.
                 </p>
                 <p>
-                This is a media card. You can use this section to describe the content.
-                This is a media card. You can use this section to describe the content.
-                This is a media card. You can use this section to describe the content.
-                This is a media card. You can use this section to describe the content.
-                This is a media card. You can use this section to describe the content.
-                This is a media card. You can use this section to describe the content.
-                This is a media card. You can use this section to describe the content.
-                This is a media card. You can use this section to describe the content.
-                This is a media card. You can use this section to describe the content.
-                This is a media card. You can use this section to describe the content.
-                This is a media card. You can use this section to describe the content.
-                This is a media card. You can use this section to describe the content.
-                This is a media card. You can use this section to describe the content.
-                This is a media card. You can use this section to describe the content.
-                This is a media card. You can use this section to describe the content.
-                This is a media card. You can use this section to describe the content.
+                  This is a media card. You can use this section to describe the content.
+                  This is a media card. You can use this section to describe the content.
+                  This is a media card. You can use this section to describe the content.
+                  This is a media card. You can use this section to describe the content.
+                  This is a media card. You can use this section to describe the content.
+                  This is a media card. You can use this section to describe the content.
+                  This is a media card. You can use this section to describe the content.
+                  This is a media card. You can use this section to describe the content.
+                  This is a media card. You can use this section to describe the content.
+                  This is a media card. You can use this section to describe the content.
+                  This is a media card. You can use this section to describe the content.
+                  This is a media card. You can use this section to describe the content.
+                  This is a media card. You can use this section to describe the content.
+                  This is a media card. You can use this section to describe the content.
+                  This is a media card. You can use this section to describe the content.
+                  This is a media card. You can use this section to describe the content.
                 </p>
                 <p>
-                This is a media card. You can use this section to describe the content.
-                This is a media card. You can use this section to describe the content.
-                This is a media card. You can use this section to describe the content.
-                This is a media card. You can use this section to describe the content.
-                This is a media card. You can use this section to describe the content.
-                This is a media card. You can use this section to describe the content.
-                This is a media card. You can use this section to describe the content.
-                This is a media card. You can use this section to describe the content.
-                This is a media card. You can use this section to describe the content.
-                This is a media card. You can use this section to describe the content.
-                This is a media card. You can use this section to describe the content.
-                This is a media card. You can use this section to describe the content.
-                This is a media card. You can use this section to describe the content.
-                This is a media card. You can use this section to describe the content.
-                This is a media card. You can use this section to describe the content.
-                This is a media card. You can use this section to describe the content.
+                  This is a media card. You can use this section to describe the content.
+                  This is a media card. You can use this section to describe the content.
+                  This is a media card. You can use this section to describe the content.
+                  This is a media card. You can use this section to describe the content.
+                  This is a media card. You can use this section to describe the content.
+                  This is a media card. You can use this section to describe the content.
+                  This is a media card. You can use this section to describe the content.
+                  This is a media card. You can use this section to describe the content.
+                  This is a media card. You can use this section to describe the content.
+                  This is a media card. You can use this section to describe the content.
+                  This is a media card. You can use this section to describe the content.
+                  This is a media card. You can use this section to describe the content.
+                  This is a media card. You can use this section to describe the content.
+                  This is a media card. You can use this section to describe the content.
+                  This is a media card. You can use this section to describe the content.
+                  This is a media card. You can use this section to describe the content.
                 </p>
               </Typography>
             </Grid>
