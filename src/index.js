@@ -9,15 +9,15 @@ import * as serviceWorker from './serviceWorker';
 
 
 const routing = (
-    <Router>
-        <div>
-            <Switch>
-                <Route exact path="/" component={Landing} />
-                <Route path="/contact" component={Contact} />
-                <Route component={Error} />
-            </Switch>
-        </div>
-    </Router>
+	<Router>
+		<div>
+			<Switch>
+				<Route exact path="/" component={Landing} />
+				<Route path="/contact" component={Contact} />
+				<Route component={Error} />
+			</Switch>
+		</div>
+	</Router>
 )
 
 ReactDOM.render(routing, document.getElementById('root'))
