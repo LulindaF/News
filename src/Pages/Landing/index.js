@@ -1,8 +1,18 @@
-import React from 'react'
+import React from 'react';
+import Content from '../../Components/Content';
+import Footer from '../../Components/Footer';
+import Header from '../../Components/Header';
 
-class Landing extends React.Component {
-  render() {
-    return <h1>Landing</h1>
-  }
+
+export default function Landing() {
+
+	return (
+		<React.Fragment>
+			<Header />
+			<main>
+				<Content />
+			</main>
+			<Footer />
+		</React.Fragment>
+	);
 }
-export default Landing

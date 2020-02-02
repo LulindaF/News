@@ -3,30 +3,27 @@ import ReactDOM from 'react-dom';
 import Landing from './Pages/Landing';
 import Contact from './Pages/Contact';
 import Error from './Pages/Error';
-import { Switch, Route, Link, BrowserRouter as Router } from 'react-router-dom'
+import Article from './Components/Article';
+import Everything from './Components/Everything';
+import Source from './Components/Source';
+import { Switch, Route, BrowserRouter as Router } from 'react-router-dom'
 import './index.css';
 import * as serviceWorker from './serviceWorker';
 
 
 const routing = (
-    <Router>
-        <div>
-            <ul>
-                <li>
-                    <Link to="/">Landing</Link>
-                </li>
-                <li>
-                    <Link to="/contact">Contact</Link>
-                </li>
-            </ul>
-
-            <Switch>
-                <Route exact path="/" component={Landing} />
-                <Route path="/contact" component={Contact} />
-                <Route component={Error} />
-            </Switch>
-        </div>
-    </Router>
+	<Router>
+		<div>
+			<Switch>
+				<Route exact path="/" component={Landing} />
+				<Route path="/contact" component={Contact} />
+				<Route path="/article" component={Article} />
+				<Route path="/everything" component={Everything} />
+				<Route path="/source" component={Source} />
+				<Route component={Error} />
+			</Switch>
+		</div>
+	</Router>
 )
 
 ReactDOM.render(routing, document.getElementById('root'))
