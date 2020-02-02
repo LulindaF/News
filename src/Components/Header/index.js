@@ -19,7 +19,7 @@ const useStyles = makeStyles(theme => ({
 		right: theme.spacing(2),
 	},
 	title: {
-		flexGrow: 1,
+		flexGrow: 1
 	},
 	button: {
 		textTransform: "none",
