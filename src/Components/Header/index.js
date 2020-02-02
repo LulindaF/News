@@ -25,7 +25,8 @@ const useStyles = makeStyles(theme => ({
 	},
 	button: {
 		textTransform: "none",
-		fontSize: '1rem'
+		fontSize: '1rem',
+		color: 'white',
 	}
 }));
 
@@ -76,13 +77,13 @@ export default function Header(props) {
 					<Typography variant="h6" className={classes.title}>OpenHouse News</Typography>
 					<ButtonGroup aria-label="text primary button group" color="inherit" variant="text">
 						<Link href="/">
-							<Button className={classes.button}>Headlines</Button>
+							<Button className={classes.button}>Home</Button>
 						</Link>
 						<Link href="/everything">
-							<Button className={classes.button}>Everything</Button>
+							<Button className={classes.button}>Headlines</Button>
 						</Link>
 						<Link href="/source">
-							<Button className={classes.button}>Source</Button>
+							<Button className={classes.button}>Sources</Button>
 						</Link>
 					</ButtonGroup>
 				</Toolbar>
