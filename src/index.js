@@ -4,10 +4,11 @@ import Landing from './Pages/Landing';
 import Contact from './Pages/Contact';
 import Error from './Pages/Error';
 import Article from './Components/Article';
-import Everything from './Components/Everything';
+import AppModel from './Components/Redirect';
 import Source from './Components/Source';
 import { Switch, Route, BrowserRouter as Router } from 'react-router-dom'
 import './index.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import * as serviceWorker from './serviceWorker';
 
 
@@ -18,7 +19,7 @@ const routing = (
 				<Route exact path="/" component={Landing} />
 				<Route path="/contact" component={Contact} />
 				<Route path="/article" component={Article} />
-				<Route path="/everything" component={Everything} />
+				<Route path="/redirect" component={AppModel} />
 				<Route path="/source" component={Source} />
 				<Route component={Error} />
 			</Switch>
