@@ -24,7 +24,6 @@ class Header extends Component {
 						</Nav>
 					</Navbar.Collapse>
 				</div>
-
 			</Navbar>
 		);
 	}
