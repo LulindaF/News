@@ -2,6 +2,10 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import Landing from './Pages/Landing';
 import Contact from './Pages/Contact';
+import Business from './Components/Business'
+import Technology from './Components/Technology'
+import Sports from './Components/Sports'
+import Entertainment from './Components/Entertainment'
 import Error from './Pages/Error';
 import AppModel from './Components/Redirect';
 import Source from './Components/Source';
@@ -19,6 +23,10 @@ const routing = (
 				<Route path="/contact" component={Contact} />
 				<Route path="/redirect" component={AppModel} />
 				<Route path="/source" component={Source} />
+				<Route path="/business" component={Business} />
+				<Route path="/technology" component={Technology} />
+				<Route path="/sports" component={Sports} />
+				<Route path="/entertainment" component={Entertainment} />
 				<Route component={Error} />
 			</Switch>
 		</div>
